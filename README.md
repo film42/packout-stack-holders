@@ -1,4 +1,4 @@
-# packout-stack-lock
+# Milwaukee Packout Stack Holders
 
 3D-printed (ASA) hardware that holds a Milwaukee Packout XL box against the cab wall of a truck bed. It grabs the box's rear corner tubes and bolts to horizontal L-track.
 
@@ -9,7 +9,7 @@
 
 The box is outlined in red, with its two rear corner tubes in silver. The hook is on the left, and the latch with its red pull handle is on the right. Both bolt to the same L-track.
 
-Each `vN/` folder is a full design iteration. The current one is **[v19](v19/README.md)**. The parts are modeled in Python with build123d, the plan views come from shapely and matplotlib, and the renders from pyvista.
+Each `vN/` folder is a complete version that was printed: [v12](v12/README.md), [v14](v14/README.md) (installed now) and **[v19](v19/README.md)** (current). The parts are modeled in Python with build123d, the plan views come from shapely and matplotlib, and the renders from pyvista.
 
 ```
 uv sync
@@ -51,3 +51,7 @@ The plan view, from above, shows the three states:
 - `vN/README.md`: what changed in that version, the hardware, and print and install notes.
 - `printcheck.py`, `jointcheck.py`: overhang and sharp-inside-corner checks on any STL.
 - `ref/`: reference models (not committed).
+
+## License
+
+© 2026 Garrett Thornburg. The designs, code, STL and STEP files, and images are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). You're free to print, share and remix them for non-commercial use, with credit, as long as you share remixes under the same license. For commercial use, ask first. See [LICENSE](LICENSE).
