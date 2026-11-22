@@ -112,6 +112,9 @@ def main():
     c = (55, 35, 20)
     shot("01_black", scene(beauty=True, box=False), [(300, 260, 190), (55, 40, 20), (0, 0, 1)])
     shot("12_box_both_corners", scene(beauty=True, hook=True), [(700, -277, 900), (60, -277, 20), (0, 0, 1)])
+    ov = scene(hook=True, box=False)
+    ov.append((prism(M.box_xy(), -90, 250).extract_feature_edges(feature_angle=30), BOX, dict(line_width=4)))   # box as an outline
+    shot("16_overview", ov, [(1100, -BOXW() / 2, 520), (40, -BOXW() / 2, 20), (0, 0, 1)])
     shot("13_hook", scene(beauty=True, box=False, hook=True), [(300, -BOXW() - 240, 190), (55, -BOXW() - 30, 20), (0, 0, 1)])
     shot("14_hook_with_box", scene(beauty=True, hook=True), [(320, -BOXW() - 220, 230), (55, -BOXW() - 20, 20), (0, 0, 1)])
     shot("02_locked", scene(), [(330, 250, 210), c, (0, 0, 1)])

@@ -1,0 +1,21 @@
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# macOS
+.DS_Store
+
+# Generated caches (rebuilt by render.py from the dish STEP)
+**/out/_dish.stl
+
+# Slicer / editor junk
+*.gcode
+*.3mf.bak
+.idea/
+.vscode/
+
+# rebuilt by render.py from the E-track STEP
+**/out/_rail.stl
